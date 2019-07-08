@@ -1,0 +1,18 @@
+2019-07-08 22:33:26,413 - processing test
+2019-07-08 22:33:28,413 - processing test
+2019-07-08 22:33:30,414 - processing test
+2019-07-08 22:33:32,415 - processing test
+2019-07-08 22:33:34,415 - processing test
+2019-07-08 22:33:36,416 - processing test
+2019-07-08 22:33:38,417 - processing test
+2019-07-08 22:33:40,417 - processing test
+2019-07-08 22:55:38,419 - Renaming test\SIP_Customer2019-05-25.csv
+2019-07-08 22:55:38,419 - Renaming test\SPM_Vendor20190707.txt
+2019-07-08 22:57:56,475 - Monitoring test
+2019-07-08 22:58:15,414 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test...
+2019-07-08 22:58:25,139 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-08 22:58:30,771 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-08 22:58:32,773 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-08 22:58:34,774 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-08 22:58:36,775 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-08 22:58:38,776 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
