@@ -2,5 +2,10 @@
     "folders": [
         "test"
     ],
-    "log_file": "./loggy.txt"
+    "log_file": "./loggy.txt",
+    "names" : [
+        "SMP_Vendor",
+        "SPM_Vendor",
+        "SIP_Customer"
+    ]
 }

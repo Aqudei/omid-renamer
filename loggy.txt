@@ -16,3 +16,31 @@
 2019-07-08 22:58:34,774 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
 2019-07-08 22:58:36,775 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
 2019-07-08 22:58:38,776 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 07:26:03,501 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 07:26:03,502 - Renaming test\SIP_Customer.csv
+2019-07-09 07:26:05,503 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 07:26:05,503 - Renaming test\SIP_Customer.csv
+2019-07-09 07:26:31,065 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 07:26:31,065 - Renaming test\SIP_Customer.csv
+2019-07-09 07:27:16,962 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 07:27:16,962 - Renaming test\SIP_Customer2019-05-25.csv
+2019-07-09 07:27:16,963 - Renaming test\SIP_Customer2019-05-26.csv
+2019-07-09 07:29:12,465 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 07:29:12,465 - Renaming test\SIP_Customer.csv
+2019-07-09 10:07:57,450 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:07:57,461 - Renaming test\SIP_Customer2019-05-26.csv
+2019-07-09 10:09:16,718 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:09:16,718 - Renaming test\SIP_Customer.csv
+2019-07-09 10:10:01,856 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:10:05,221 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:10:07,559 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:10:18,978 - Monitoring C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:13:31,524 - Processing C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:14:30,008 - Processing C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:15:35,384 - Processing C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:15:52,693 - Processing C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:15:52,694 - Renaming test\SPM_Vendor20190707.txt
+2019-07-09 10:15:52,695 - Renaming test\SPM_Vendor20190708.txt
+2019-07-09 10:17:01,834 - Processing C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-09 10:17:01,835 - Renaming test\SIP_Customer2019-05-25.csv
+2019-07-09 10:17:01,835 - Renaming test\SPM_Vendor20190707.txt
