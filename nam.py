@@ -5,31 +5,36 @@ import time
 import os
 import logging
 import re
+import Check_Common
+
+DoneList = set()
 
 
-def do_rename(config):
+def DoRename(config):
 
-    names = config['names']
+    names = config['Renames']
+    folder = config['FileDir']
 
-    for folder in config['folders']:
-        logger.debug("Processing {} . . .".format(os.path.abspath(folder)))
-        for file in os.listdir(folder):
-            original = os.path.join(folder, file)
-            if not os.path.isfile(original):
+    logger.debug("Processing {} . . .".format(os.path.abspath(folder)))
+    for file in sorted(os.listdir(folder)):
+        original = os.path.join(folder, file)
+        if not os.path.isfile(original):
+            continue
+
+        fn, ext = os.path.splitext(file)
+
+        for name in names:
+            destination = os.path.join(folder, name + ext)
+            if not fn.startswith(name) or fn == name or destination in DoneList:
                 continue
 
-            fn, ext = os.path.splitext(file)
-            #import pdb; pdb.set_trace()
-            for name in names:
-                if fn.startswith(name) and not fn == name:
-                    #import pdb; pdb.set_trace()
-                    logger.debug("Renaming {}".format(original))
+            if os.path.isfile(destination):
+                os.remove(destination)
 
-                    destination = os.path.join(folder, name + ext)
-                    if os.path.exists(destination):
-                        os.remove(destination)
-
-                    os.rename(original, destination)
+            logger.debug("Renaming {} to {}".format(
+                original, destination))
+            os.rename(original, destination)
+            DoneList.add(destination)
 
 
 if __name__ == "__main__":
@@ -37,20 +42,24 @@ if __name__ == "__main__":
     parser.add_argument('--loop', action='store_true')
     args = parser.parse_args()
 
-    with open('./config.json', 'r') as fp:
+    with open(Check_Common.ConfigFileLocation, 'rt') as fp:
         config = json.load(fp)
 
     # Setup Logger
-    logging_format = '%(asctime)s - %(message)s'
-    logging.basicConfig(filename=config['log_file'], level=logging.DEBUG,
-                        format=logging_format)
+    loggingFormat = '%(asctime)s - %(message)s'
+    logging.basicConfig(filename=config['LogDoc'], level=logging.DEBUG,
+                        format=loggingFormat)
 
     logger = logging.getLogger()
     logger.addHandler(logging.StreamHandler())
 
     if not args.loop:
-        do_rename(config)
+        DoneList.clear()
+        DoRename(config)
     else:
+        # Pass argument "loop" if you want the script to run
+        # in a loop mode (Usage: python nam.py --loop)
         while True:
-            do_rename(config)
+            DoneList.clear()
+            DoRename(config)
             time.sleep(2)
