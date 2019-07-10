@@ -28,7 +28,7 @@ def do_rename(config):
                     destination = os.path.join(folder, name + ext)
                     if os.path.exists(destination):
                         os.remove(destination)
-   
+
                     os.rename(original, destination)
 
 
@@ -50,8 +50,7 @@ if __name__ == "__main__":
 
     if not args.loop:
         do_rename(config)
-        exit()
-
-    while True:
-        do_rename(config)
-        time.sleep(2)
+    else:
+        while True:
+            do_rename(config)
+            time.sleep(2)
