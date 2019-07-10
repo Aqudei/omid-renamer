@@ -6,6 +6,7 @@ import os
 import logging
 import re
 import Check_Common
+import sys
 
 DoneList = set()
 
@@ -42,6 +43,11 @@ if __name__ == "__main__":
     parser.add_argument('--loop', action='store_true')
     args = parser.parse_args()
 
+    if not os.path.isfile(Check_Common.ConfigFileLocation):
+        print("Cannot find configuration file {}".format(
+            Check_Common.ConfigFileLocation))
+        sys.exit()
+
     with open(Check_Common.ConfigFileLocation, 'rt') as fp:
         config = json.load(fp)
 
@@ -52,6 +58,11 @@ if __name__ == "__main__":
 
     logger = logging.getLogger()
     logger.addHandler(logging.StreamHandler())
+
+    if not "Renames" in config:
+        logger.debug(
+            "Please add 'Renames' key in your configuration so I will know what files to be rename.")
+        sys.exit()
 
     if not args.loop:
         DoneList.clear()

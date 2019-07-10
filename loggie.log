@@ -1,0 +1,4 @@
+2019-07-11 06:06:26,378 - Please add 'Renames' key in your configuration so I will know what files to be rename.
+2019-07-11 06:06:42,605 - Processing C:\Users\user\Desktop\Upwork\renamer\test . . .
+2019-07-11 06:06:42,606 - Renaming C:\Users\user\Desktop\Upwork\renamer\test\SIP_Customer2019-05-26.csv to C:\Users\user\Desktop\Upwork\renamer\test\SIP_Customer.csv
+2019-07-11 06:06:42,606 - Renaming C:\Users\user\Desktop\Upwork\renamer\test\SPM_Vendor20190708.txt to C:\Users\user\Desktop\Upwork\renamer\test\SPM_Vendor.txt
