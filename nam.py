@@ -23,9 +23,10 @@ def DoRename(config):
             continue
 
         fn, ext = os.path.splitext(file)
+        _, ext2 = os.path.splitext(fn)
 
         for name in names:
-            destination = os.path.join(folder, name + ext)
+            destination = os.path.join(folder, name + ext2 + ext)
             if not fn.startswith(name) or fn == name or destination in DoneList:
                 continue
 
