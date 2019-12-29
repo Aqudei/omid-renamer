@@ -96,6 +96,13 @@ for filename in os.listdir(FileDir):
         continue
 
     destination = os.path.join(ArchiveDir, filename)
+
+    existing_renamed = os.path.join(FileDir, IM_Common.trim_date(filename))
+    if os.path.exists(existing_renamed):
+        logger.debug(
+            "Not archiving the file {} as {} already exists!".format(file_loc, existing_renamed))
+        continue
+
     shutil.copy(file_loc, destination)
     archive_count = archive_count + 1
 

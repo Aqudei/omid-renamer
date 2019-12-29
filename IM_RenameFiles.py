@@ -25,7 +25,6 @@ def name_match(name):
 def DoRename(config, lookup_names):
     renames_count = 0
 
-    names = lookup_names
     folder = config['FileDir']
 
     logging.info('***')
@@ -41,7 +40,7 @@ def DoRename(config, lookup_names):
         new_name = IM_Common.trim_date(File)
         fn, _ = os.path.splitext(new_name)
 
-        for name in names:
+        for name in lookup_names:
 
             destination = os.path.join(folder, new_name)
             clean_name = os.path.basename(destination)
