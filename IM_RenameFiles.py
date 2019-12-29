@@ -9,6 +9,7 @@ import IM_Common
 import sys
 import json
 import argparse
+import shutil
 
 logger = None
 
@@ -47,13 +48,14 @@ def DoRename(config, lookup_names):
             if not fn.startswith(name) or new_name == name or clean_name in DoneList:
                 continue
 
-            if os.path.isfile(destination):
-                # Skip existing file
-                continue
+            # if os.path.isfile(destination):
+            #     # Skip existing file
+            #     continue
 
             logger.info("Renamed {} to {}".format(
                 original_file, destination))
-            os.rename(original_file, destination)
+            # os.rename(original_file, destination)
+            shutil.move(original_file, destination)
             renames_count = renames_count + 1
             DoneList[clean_name] = File
 
